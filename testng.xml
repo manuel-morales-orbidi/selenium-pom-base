@@ -1,7 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="parallel">
-    <test name="Device-1" >
+    <test name="demoTestUno" >
         <parameter name="url" value="https://www.google.com/" />
+        <classes>
+            <class name="testScript.DemoTest"/>
+        </classes>
+    </test>
+    <test name="demoTestDos" >
+        <parameter name="url" value="https://www.facebook.com/" />
         <classes>
             <class name="testScript.DemoTest"/>
         </classes>
